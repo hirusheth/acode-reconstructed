@@ -18,6 +18,24 @@ Reconstructed source tree, Cordova hybrid bundle, native Android plugins, Alpine
 
 ---
 
+## Download & Build APK
+
+### 1. Prebuilt Signed APK (GitHub Release & `dist/`)
+- **GitHub Release**: [`v1.13.2` — `acode-reconstructed-v1.13.2-debug.apk`](https://github.com/tnq54/acode-reconstructed/releases/tag/v1.13.2)
+- **In-Repository Build Output**: [`dist/acode-reconstructed-v1.13.2-debug.apk`](./dist/acode-reconstructed-v1.13.2-debug.apk) (SHA-256 in [`dist/acode-reconstructed-v1.13.2-debug.apk.sha256`](./dist/acode-reconstructed-v1.13.2-debug.apk.sha256))
+- **GitHub Actions CI**: Every push to `main` automatically runs [`.github/workflows/build-apk.yml`](./.github/workflows/build-apk.yml) to assemble, `zipalign`, and `apksigner`-sign the APK artifact.
+
+### 2. Build Locally from Source Tree
+Modify any frontend files in `android/app/src/main/assets/www/` or shell initialization scripts (`init-alpine.sh`, `init-sandbox.sh`, `rm-wrapper.sh`) and run:
+
+```bash
+./scripts/build-apk.sh
+```
+
+This script packages the live `android/app/src/main/assets/` tree with `android/app/src/main/apk-container/`, aligns `resources.arsc` on 4-byte boundaries with `zipalign`, signs the APK with APK Signature Schemes v2 & v3 via `apksigner`, and outputs `dist/acode-reconstructed-v1.13.2-debug.apk`.
+
+---
+
 ## Repository Layout
 
 ```text
