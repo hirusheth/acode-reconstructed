@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.foxdebug.acode'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.foxdebug.acode"
+        minSdk 24
+        // F-Droid build targets SDK 28 so PRoot and shell binaries in $FILES_DIR can execute
+        // without Android 10+ W^X SELinux app_data_file restrictions (see ProcessManager.isFdroidBuild()).
+        targetSdk 28
+        versionCode 1008
+        versionName "1.13.2"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.webkit:webkit:1.11.0'
+    implementation 'androidx.browser:browser:1.8.0'
+    implementation 'androidx.documentfile:documentfile:1.0.1'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
+    implementation 'androidx.core:core-SplashScreen:1.0.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'org.java-websocket:Java-WebSocket:1.5.6'
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    implementation 'commons-net:commons-net:3.10.0'
+    implementation 'com.sshtools:maverick-synergy-client:3.1.2'
+}

@@ -1,0 +1,73 @@
+{
+  "artifact": {
+    "package_name": "com.foxdebug.acode",
+    "version_name": "1.13.2",
+    "version_code": 1008,
+    "source_url": "https://f-droid.org/repo/com.foxdebug.acode_1008.apk",
+    "apk_sha256": "a8ed4864da95493d84bcd430b47a8900815eced7fe7c763929ef7a38c3987c39",
+    "apk_size_bytes": 16826562,
+    "extracted_tree_sha256": "da40389f35ce67050aebe0b026526c4c202c256c777785beb1e2a75bd03845ca",
+    "www_root_sha256": "a2b956dbfb6ae681b3324d90959626a5d407c0a602e514db798a6528ebde74bb"
+  },
+  "rea_evidence_records": [
+    {
+      "tool": "inspect_apk_signature",
+      "summary_evidence_id": "ev_4fa7746125745a01076d16e56b5ff9eb328f26433d20c8ed28274218b99f4901",
+      "parent_evidence_id": "ev_8237ed2c90be495c8390ef56fe89116761baf23f410c1a1a2071cbd9c58253bf",
+      "certificate_sha256": "4ad655ec828b607be7a37dde5d41753e8f332778c21efab8845f44df72de5fff",
+      "schemes": {
+        "v1": true,
+        "v2": true,
+        "v3": true,
+        "v3_1": false
+      },
+      "self_consistent": true
+    },
+    {
+      "tool": "inspect_artifact",
+      "summary_evidence_id": "ev_f1e7d69787b1ac553db5f8e25f88a0b9727848c4c259794691ef912ea1a69100",
+      "parent_evidence_id": "ev_8bdc972a1985189e5ec9472f1093d92dfabed0668e38b2e8ac5adcca75795b6d",
+      "inventory_evidence_id": "ev_414580af8010adb25e431668da0830e73a109da583375589594e6a0bdc49ff7d",
+      "manifest_id": "agm_cf333f561430471ef33fcb933ac95bb78285b206ab65b67e1055b70be5507f98",
+      "node_count": 948,
+      "occurrence_count": 1031,
+      "edge_count": 1030,
+      "integrity_contradictions": 0
+    },
+    {
+      "tool": "extract_artifact",
+      "evidence_id": "ev_3c4046ac345546c1aa1b8c949b65d8710e5d045b71d03f0f5adad516a355a959",
+      "extraction_id": "aex_38e1f2c114013813afeb1e873c9795882ca5f0e9726e36d2b68203c6f1d074f6",
+      "files_sha256": "da40389f35ce67050aebe0b026526c4c202c256c777785beb1e2a75bd03845ca"
+    },
+    {
+      "tool": "analyze_javascript_application",
+      "pass": "entry_and_cordova_bridge",
+      "summary_evidence_id": "ev_44318fcb5fc4d93ad13d3a89c94107ef44e085c11953e0882e4bb0d2b1a9a668",
+      "parent_evidence_id": "ev_6a2b74a51b97ecc0d08ce873111f3c992065de3e9d8e9fef9da47907a8a62269",
+      "included_files": [
+        "index.html",
+        "cordova.js",
+        "cordova_plugins.js"
+      ]
+    },
+    {
+      "tool": "analyze_javascript_application",
+      "pass": "boot_and_custom_plugins",
+      "summary_evidence_id": "ev_bdc1f3fc0b40a1c3d427da5011a5d959d61d5e8ee3fee13e69d561f45b4d89d7",
+      "parent_evidence_id": "ev_4aba62deff0d6191a7596c7afd8e3130af609ada675710ba58dc5bc45753854d",
+      "included_files": [
+        "build/boot.js",
+        "plugins/com.foxdebug.acode.rk.auth/www/Authenticator.js",
+        "plugins/com.foxdebug.acode.rk.exec.terminal/www/Executor.js",
+        "plugins/com.foxdebug.acode.rk.exec.terminal/www/TerminalService.js",
+        "plugins/com.foxdebug.acode.rk.customtabs/www/CustomTabs.js",
+        "plugins/cordova-plugin-system/www/plugin.js",
+        "plugins/cordova-plugin-sdcard/www/plugin.js",
+        "plugins/cordova-plugin-server/www/plugin.js",
+        "plugins/cordova-plugin-ftp/www/plugin.js",
+        "plugins/cordova-plugin-sftp/www/plugin.js"
+      ]
+    }
+  ]
+}

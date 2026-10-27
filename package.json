@@ -1,0 +1,38 @@
+{
+  "name": "com.foxdebug.acode",
+  "displayName": "Acode",
+  "version": "1.13.2",
+  "description": "Reconstructed Cordova & Android project for Acode (com.foxdebug.acode v1.13.2, versionCode 1008) from F-Droid",
+  "main": "android/app/src/main/assets/www/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tnq54/acode-reconstructed.git"
+  },
+  "author": "ajit@foxdebug.com (Reconstructed with Reverse Engineer Anything)",
+  "license": "MIT",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-clipboard": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-ftp": {},
+      "cordova-plugin-sdcard": {},
+      "cordova-plugin-websocket": {},
+      "cordova-plugin-buildinfo": {},
+      "cordova-plugin-browser": {},
+      "cordova-plugin-sftp": {},
+      "com.foxdebug.acode.rk.exec.terminal": {},
+      "com.foxdebug.acode.rk.plugin.plugincontext": {},
+      "com.foxdebug.acode.rk.auth": {},
+      "com.foxdebug.acode.rk.customtabs": {},
+      "cordova-plugin-system": {},
+      "cordova-plugin-crashhandler": {},
+      "cordova-plugin-advanced-http": {},
+      "cordova-plugin-acode-webview": {},
+      "cordova-plugin-server": {}
+    }
+  }
+}
