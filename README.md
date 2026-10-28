@@ -1,5 +1,7 @@
 # Acode (`com.foxdebug.acode` v1.13.2) — Reconstructed Repository
 
+[![Featured on Made with REA](https://madewithrea.com/badges/featured.svg)](https://madewithrea.com/builds/acode-v1-13-2-android-cordova-project-reconstructed-from-the-apk-with)
+
 Reconstructed source tree, Cordova hybrid bundle, native Android plugins, Alpine/PRoot terminal scripts, and **Reverse Engineer Anything (REA)** static analysis report for **Acode (`com.foxdebug.acode` v1.13.2, `versionCode: 1008`)** from [F-Droid](https://f-droid.org/packages/com.foxdebug.acode).
 
 ---
